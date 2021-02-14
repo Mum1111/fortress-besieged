@@ -3,8 +3,10 @@ import { View, Image } from '@tarojs/components'
 
 import Navigation from '../../components/Study/Navigation/index'
 import Title from '../../components/Study/Title/index'
+import Banner from '../../components/Study/Banner'
 
 import './index.scss'
+
 
 interface IProps {
 
@@ -53,6 +55,7 @@ export default class Study extends Component<IState, IProps> {
         </View>
         <Navigation />
         <Title link='courseList'>推荐课程</Title>
+        <Banner />
         <Title link='exerciseList'>热门题库</Title>
       </View>
     )
