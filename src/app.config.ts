@@ -4,8 +4,8 @@ export default {
   ],
   window: {
     backgroundTextStyle: 'light',
-    navigationBarBackgroundColor: '#fff',
+    navigationBarBackgroundColor: '#1890ff',
     navigationBarTitleText: '',
-    navigationBarTextStyle: 'black'
+    navigationBarTextStyle: 'white'
   }
 }
