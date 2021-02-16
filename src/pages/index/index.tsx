@@ -42,7 +42,7 @@ export default class Index extends Component<IState> {
   render () {
     const { current } = this.state
     return (
-      <View className='index'>
+      <View className='index-container'>
         {current === 0 ? <Study /> : null}
         <Tabbar onSwitchTab={this.switchTab.bind(this)} current={current}></Tabbar>
       </View>
