@@ -5,6 +5,7 @@ import Taro from '@tarojs/taro'
 import Tabbar from '../../components/Tabbar/index'
 
 import Study from '../study/index'
+import DashBoard from "../dashboard/index";
 
 import './index.scss'
 
@@ -43,7 +44,7 @@ export default class Index extends Component<IState> {
     const { current } = this.state
     return (
       <View className='index-container'>
-        {current === 0 ? <Study /> : null}
+        {current === 0 ? <Study /> : current === 2 ? <DashBoard /> : null}
         <Tabbar onSwitchTab={this.switchTab.bind(this)} current={current}></Tabbar>
       </View>
     )
